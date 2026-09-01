@@ -13,6 +13,9 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "db:migrate": "tsx src/database/migrate.ts up",
+    "db:migrate:undo": "tsx src/database/migrate.ts down",
+    "db:migrate:status": "tsx src/database/migrate.ts status",
     "test": "vitest run",
     "test:watch": "vitest"
   },

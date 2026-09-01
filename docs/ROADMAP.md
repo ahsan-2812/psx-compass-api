@@ -22,8 +22,8 @@ Status: In progress
 - [x] Graceful shutdown
 - [x] Type checking, linting, formatting, and test runner
 - [x] Repository-level Codex guidance
-- [ ] Sequelize migration system
-- [ ] Migration conventions and commands
+- [x] Sequelize migration system
+- [x] Migration conventions and commands
 - [ ] CI verification workflow
 
 ## Milestone 1 - Accounting foundation
