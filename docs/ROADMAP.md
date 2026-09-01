@@ -34,7 +34,9 @@ Status: In progress
 - [x] Create sector and PSX security-master tables
 - [x] Add security type, listing status, Shariah status, and valuation-engine classification
 - [x] Add company-data provenance and freshness fields
+- [x] Add PSX index classifications and historical constituent-membership schema
 - [ ] Seed an initial validated company dataset
+- [ ] Import validated PSX index definitions and constituent history
 
 ### Users and authentication
 

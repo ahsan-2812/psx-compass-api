@@ -33,6 +33,7 @@ The server validates its configuration and SQL Server connection before acceptin
 | `npm run db:migrate:undo`           | Revert the latest database migration        |
 | `npm run db:migrate:status`         | List applied and pending migrations         |
 | `npm run db:verify:security-master` | Build and verify the security-master schema |
+| `npm run db:verify:index-master`    | Build and verify the PSX index schema       |
 | `npm test`                          | Run the test suite                          |
 
 ## Database migrations
@@ -58,6 +59,11 @@ the same migration.
 `npm run db:verify:security-master` first creates a fresh production build and then checks the
 security-master schema and its `SequelizeMeta` record. It requires a configured local database and
 the security-master migration to already be applied.
+
+`npm run db:verify:index-master` builds the project and verifies the `indices` and
+`index_constituents` tables, temporal constraints, foreign keys, indexes, filtered current-period
+uniqueness, and migration record. It requires a configured local database with both the
+security-master and index-master migrations already applied.
 
 ## Database models
 

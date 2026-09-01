@@ -14,6 +14,8 @@ import type {
   ShariahStatus,
   ValuationEngine,
 } from './security-master.constants.js';
+import type { IndexConstituent } from './index-constituent.model.js';
+import type { MarketIndex } from './market-index.model.js';
 import type { Sector } from './sector.model.js';
 
 export class Company extends Model<InferAttributes<Company>, InferCreationAttributes<Company>> {
@@ -34,6 +36,8 @@ export class Company extends Model<InferAttributes<Company>, InferCreationAttrib
   declare updatedAt: CreationOptional<Date>;
 
   declare sector?: NonAttribute<Sector>;
+  declare indexConstituents?: NonAttribute<IndexConstituent[]>;
+  declare indices?: NonAttribute<MarketIndex[]>;
 }
 
 export function initializeCompanyModel(database: Sequelize): typeof Company {

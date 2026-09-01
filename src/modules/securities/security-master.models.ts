@@ -1,6 +1,7 @@
 import type { Sequelize } from 'sequelize';
 
 import { Company, initializeCompanyModel } from './company.model.js';
+import { initializeIndexMasterModels } from './index-master.models.js';
 import { Sector, initializeSectorModel } from './sector.model.js';
 
 export function initializeSecurityMasterModels(database: Sequelize): void {
@@ -19,6 +20,8 @@ export function initializeSecurityMasterModels(database: Sequelize): void {
     onDelete: 'NO ACTION',
     onUpdate: 'NO ACTION',
   });
+
+  initializeIndexMasterModels(database);
 }
 
 export { Company, Sector };

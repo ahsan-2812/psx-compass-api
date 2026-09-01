@@ -9,3 +9,6 @@ export type ShariahStatus = (typeof shariahStatuses)[number];
 
 export const valuationEngines = ['NORMAL', 'BANK', 'REIT'] as const;
 export type ValuationEngine = (typeof valuationEngines)[number];
+
+export const indexTypes = ['BROAD_MARKET', 'SECTOR', 'SHARIAH', 'DIVIDEND', 'OTHER'] as const;
+export type IndexType = (typeof indexTypes)[number];
