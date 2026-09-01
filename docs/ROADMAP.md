@@ -9,7 +9,7 @@
   handling are complete.
 - Keep the Express application a modular monolith until demonstrated scaling needs justify a split.
 
-## Milestone 0 — API foundation
+## Milestone 0 - API foundation
 
 Status: In progress
 
@@ -26,7 +26,7 @@ Status: In progress
 - [ ] Migration conventions and commands
 - [ ] CI verification workflow
 
-## Milestone 1 — Accounting foundation
+## Milestone 1 - Accounting foundation
 
 ### Database and security master
 
@@ -76,7 +76,7 @@ Status: In progress
 - Holdings can be fully rebuilt from the ledger.
 - Accounting tests cover partial sales, multiple lots, fees, taxes, and invalid transactions.
 
-## Milestone 2 — Investor workflow
+## Milestone 2 - Investor workflow
 
 ### Income and corporate actions
 
@@ -111,7 +111,7 @@ Status: In progress
 - Market-price failures are visible and never silently produce misleading results.
 - Dashboard figures reconcile with ledger and holdings calculations.
 
-## Milestone 3 — Automated portfolio synchronization
+## Milestone 3 - Automated portfolio synchronization
 
 ### Import pipeline
 
@@ -140,7 +140,7 @@ Status: In progress
 - No extracted transaction enters the ledger without validation.
 - Users can review and correct uncertain imports.
 
-## Milestone 4 — Pakistan investor tools
+## Milestone 4 - Pakistan investor tools
 
 ### Tax
 
@@ -164,7 +164,7 @@ Status: In progress
 - Tax and Zakat results are reproducible from stored versioned rules and source data.
 - Reports disclose assumptions and do not present themselves as official filing or religious rulings.
 
-## Milestone 5 — Research and valuation
+## Milestone 5 - Research and valuation
 
 ### Financial-data platform
 
@@ -201,7 +201,7 @@ Status: In progress
 - Every valuation result identifies its engine version, inputs, sources, freshness, and warnings.
 - Portfolio valuation never modifies portfolio accounting history.
 
-## Milestone 6 — Alerts, mobile, and commercial release
+## Milestone 6 - Alerts, mobile, and commercial release
 
 ### Alerts and notifications
 
