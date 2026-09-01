@@ -1,12 +1,11 @@
 import { DataTypes, Op, literal } from 'sequelize';
 
 import type { Migration } from '../migrator.js';
-import {
-  listingStatuses,
-  securityTypes,
-  shariahStatuses,
-  valuationEngines,
-} from '../../modules/securities/security-master.constants.js';
+
+const securityTypes = ['EQUITY', 'REIT', 'ETF', 'OTHER'] as const;
+const listingStatuses = ['ACTIVE', 'SUSPENDED', 'DELISTED'] as const;
+const shariahStatuses = ['COMPLIANT', 'NON_COMPLIANT', 'UNKNOWN'] as const;
+const valuationEngines = ['NORMAL', 'BANK', 'REIT'] as const;
 
 export const up: Migration = async ({ context: queryInterface }) => {
   await queryInterface.sequelize.transaction(async (transaction) => {

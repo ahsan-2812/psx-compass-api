@@ -25,8 +25,8 @@ export class Company extends Model<InferAttributes<Company>, InferCreationAttrib
   declare listingStatus: ListingStatus;
   declare shariahStatus: ShariahStatus;
   declare valuationEngine: ValuationEngine;
-  declare listedAt: Date | null;
-  declare delistedAt: Date | null;
+  declare listedAt: string | null;
+  declare delistedAt: string | null;
   declare dataSource: string | null;
   declare sourceUpdatedAt: Date | null;
   declare isActive: CreationOptional<boolean>;

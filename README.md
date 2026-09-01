@@ -22,17 +22,18 @@ The server validates its configuration and SQL Server connection before acceptin
 
 ## Commands
 
-| Command                     | Purpose                                 |
-| --------------------------- | --------------------------------------- |
-| `npm run dev`               | Run the API with file watching          |
-| `npm run build`             | Compile production JavaScript           |
-| `npm run typecheck`         | Check TypeScript without emitting files |
-| `npm run lint`              | Run ESLint                              |
-| `npm run format:check`      | Verify formatting                       |
-| `npm run db:migrate`        | Apply all pending database migrations   |
-| `npm run db:migrate:undo`   | Revert the latest database migration    |
-| `npm run db:migrate:status` | List applied and pending migrations     |
-| `npm test`                  | Run the test suite                      |
+| Command                             | Purpose                                     |
+| ----------------------------------- | ------------------------------------------- |
+| `npm run dev`                       | Run the API with file watching              |
+| `npm run build`                     | Compile production JavaScript               |
+| `npm run typecheck`                 | Check TypeScript without emitting files     |
+| `npm run lint`                      | Run ESLint                                  |
+| `npm run format:check`              | Verify formatting                           |
+| `npm run db:migrate`                | Apply all pending database migrations       |
+| `npm run db:migrate:undo`           | Revert the latest database migration        |
+| `npm run db:migrate:status`         | List applied and pending migrations         |
+| `npm run db:verify:security-master` | Build and verify the security-master schema |
+| `npm test`                          | Run the test suite                          |
 
 ## Database migrations
 
@@ -53,6 +54,10 @@ migration; create a new corrective migration instead.
 Completed migrations are recorded in the `SequelizeMeta` table. Migration identities omit the
 file extension, ensuring that development `.ts` files and compiled production `.js` files refer to
 the same migration.
+
+`npm run db:verify:security-master` first creates a fresh production build and then checks the
+security-master schema and its `SequelizeMeta` record. It requires a configured local database and
+the security-master migration to already be applied.
 
 ## Database models
 
