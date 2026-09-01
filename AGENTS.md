@@ -1,5 +1,15 @@
 # PSX Compass API Guidance
 
+## Required project context
+
+Before planning or implementing product functionality, read:
+
+1. `docs/PRODUCT_SCOPE.md` for the approved product boundary and principles.
+2. `docs/ROADMAP.md` for milestone order, dependencies, and completion criteria.
+
+Do not silently remove approved scope, pull deferred functionality into the active milestone, or
+change roadmap order without documenting the reason and confirming any material product decision.
+
 ## Product
 
 PSX Compass is a complete Pakistan Stock Exchange portfolio-management and investor platform.
@@ -25,6 +35,7 @@ Valuation is one module, not the entire product. Portfolio accounting is the cor
 - Keep global market data separate from user-entered overrides and portfolio records.
 - Version valuation rules so historical results remain reproducible.
 - Every automated financial field must retain source and freshness metadata.
+- Keep roadmap checkboxes accurate when a feature is actually completed and verified.
 
 ## Initial product modules
 
