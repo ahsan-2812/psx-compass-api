@@ -2,10 +2,7 @@ import type { QueryInterface, Transaction } from 'sequelize';
 import { Op } from 'sequelize';
 import { describe, expect, it } from 'vitest';
 
-import {
-  down,
-  up,
-} from '../../../src/database/migrations/20260901160000-create-index-master.js';
+import { down, up } from '../../../src/database/migrations/20260901160000-create-index-master.js';
 
 type ColumnDefinition = { type?: unknown };
 type TableColumns = Record<string, ColumnDefinition>;
