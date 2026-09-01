@@ -54,6 +54,13 @@ Completed migrations are recorded in the `SequelizeMeta` table. Migration identi
 file extension, ensuring that development `.ts` files and compiled production `.js` files refer to
 the same migration.
 
+## Database models
+
+Models live with their business module under `src/modules`. Each model exposes an explicit
+initializer, while module-level initialization defines associations after all participating models
+are registered. Database column names use snake case and TypeScript attributes use camel case.
+Schema changes belong in migrations; the application must never use `sequelize.sync()`.
+
 ## Health endpoints
 
 - `GET /api/v1/health/live` verifies that the API process is running.

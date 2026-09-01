@@ -16,6 +16,7 @@
     "db:migrate": "tsx src/database/migrate.ts up",
     "db:migrate:undo": "tsx src/database/migrate.ts down",
     "db:migrate:status": "tsx src/database/migrate.ts status",
+    "db:verify:security-master": "node scripts/verify-security-master.mjs",
     "test": "vitest run",
     "test:watch": "vitest"
   },

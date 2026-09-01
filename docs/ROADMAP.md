@@ -30,10 +30,10 @@ Status: In progress
 
 ### Database and security master
 
-- [ ] Establish migration and model conventions
-- [ ] Create sector and PSX security-master tables
-- [ ] Add security type, listing status, Shariah status, and valuation-engine classification
-- [ ] Add company-data provenance and freshness fields
+- [x] Establish migration and model conventions
+- [x] Create sector and PSX security-master tables
+- [x] Add security type, listing status, Shariah status, and valuation-engine classification
+- [x] Add company-data provenance and freshness fields
 - [ ] Seed an initial validated company dataset
 
 ### Users and authentication
